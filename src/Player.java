@@ -1,58 +1,73 @@
-public class Player extends Character {
-    private int wood = 0;
-    private int stone = 0;
-    private int food = 0;
+class Player extends Character {
+    private int wood;
+    private int stone;
+    private int food;
 
     public Player(String name, int attack, int defense, int health) {
-        this.name = name;
-        this.attack = attack;
-        this.defense = defense;
-        this.health = health;
-    }
-
-    public void collectResource(Collectible item) {
-        if (item instanceof Tree) {
-            wood += item.getQuantity();
-        } else if (item instanceof Rock) {
-            stone += item.getQuantity();
-        } else if (item instanceof Grain) {
-            food += item.getQuantity();
-        }
+        super(name, attack, defense, health);
+        this.wood = 0;
+        this.stone = 0;
+        this.food = 0;
     }
 
     @Override
     public void damage(Character target) {
-        int damage = this.attack - target.defense;
-        target.takeDamage(damage > 0 ? damage : 0);
+        int damageDealt = Math.max(0, this.attack - target.getDefense());
+        target.takeDamage(damageDealt);
+        System.out.println(this.name + " dealt " + damageDealt + " damage to " + target.getName());
     }
 
     @Override
-    public void takeDamage(int damage) {
-        health -= damage;
-        if (health <= 0) {
+    public void takeDamage(int amount) {
+        this.health -= amount;
+        if (this.health <= 0) {
             die();
         }
     }
 
     @Override
     public void die() {
-        alive = false;
-        System.out.println("Player has died!");
+        this.status = "dead";
+        System.out.println(this.name + " has died.");
     }
 
-    public void craftBuilding(String buildingName) {
-        if ("Fountain of Life".equals(buildingName) && wood >= 10 && stone >= 5) {
-            wood -= 10;
-            stone -= 5;
-            System.out.println("Fountain of Life built! Health restored.");
-            this.health = 100;
-        } else if ("Sword Monument".equals(buildingName) && wood >= 15 && stone >= 10) {
-            wood -= 15;
-            stone -= 10;
-            this.attack += this.attack * 0.1;
-            System.out.println("Sword Monument built! Attack increased.");
-        } else {
-            System.out.println("Not enough resources.");
+    public void collectResource(Collectable resource) {
+        if (resource instanceof Tree) {
+            this.wood += resource.getQuantity() * resource.getQuality().getMultiplier();
+        } else if (resource instanceof Rock) {
+            this.stone += resource.getQuantity() * resource.getQuality().getMultiplier();
+        } else if (resource instanceof Grain) {
+            this.food += resource.getQuantity() * resource.getQuality().getMultiplier();
         }
+        System.out.println("Collected: " + resource);
+    }
+
+    public void manageCrafting(String item) {
+        if (item.equals("Fountain of Life") && wood >= 5 && stone >= 3) {
+            wood -= 5;
+            stone -= 3;
+            System.out.println("Fountain of Life built!");
+            this.health = 100; // Restore health
+        } else if (item.equals("Sword Monument") && wood >= 7 && stone >= 5) {
+            wood -= 7;
+            stone -= 5;
+            System.out.println("Sword Monument built!");
+            this.attack += this.attack * 0.1; // Boost attack
+        } else {
+            System.out.println("Insufficient resources to craft " + item);
+        }
+    }
+
+    // Getters for resources
+    public int getWood() {
+        return wood;
+    }
+
+    public int getStone() {
+        return stone;
+    }
+
+    public int getFood() {
+        return food;
     }
 }

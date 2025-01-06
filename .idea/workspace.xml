@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e9a3e6c-4f15-460f-9c4e-5209cc44f634" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lwjgl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lwjgl_glfw.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lwjgl_opengl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECG-Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ECG-Game.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collectible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SurvivalGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SurvivalGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,21 +41,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dr-nguyen"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dr-nguyen&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dr-nguyen/ECG-Game.git",
-    "accountId": "3dddc8ff-f62e-4a33-ad36-e68f398704bd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dr-nguyen/ECG-Game.git&quot;,
+    &quot;accountId&quot;: &quot;3dddc8ff-f62e-4a33-ad36-e68f398704bd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2qer3Y9TGTn121BE2HIAPuy5otW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,23 +66,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.JRPGGame.executor": "Run",
     "Application.Laborator4egc1.executor": "Run",
     "Application.MainGame.executor": "Run",
     "Application.SurvivalGame.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nguyen/Downloads/lwjgl-3.3.6/lwjgl-opengl/lwjgl-opengl.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/nguyen/IdeaProjects/ECG-Game/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15820312",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nguyen\IdeaProjects\ECG-Game\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Laborator4egc1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-21" />
@@ -91,7 +125,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735033687653</updated>
-      <workItem from="1735033688711" duration="1395000" />
+      <workItem from="1735033688711" duration="1523000" />
+      <workItem from="1735574030499" duration="35000" />
+      <workItem from="1736155542383" duration="541000" />
+      <workItem from="1736156626773" duration="809000" />
+      <workItem from="1736157523725" duration="4078000" />
     </task>
     <servers />
   </component>

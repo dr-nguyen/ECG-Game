@@ -1,0 +1,13 @@
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl</artifactId>
+    <version>3.3.3</version>
+<groupId>org.lwjgl</groupId>
+<artifactId>lwjgl-glfw</artifactId>
+<version>3.3.3</version>
+<groupId>org.lwjgl</groupId>
+<artifactId>lwjgl-opengl</artifactId>
+<version>3.3.3</version>
+<groupId>org.lwjgl</groupId>
+<artifactId>lwjgl-natives-windows</artifactId>
+<version>3.3.3</version>
